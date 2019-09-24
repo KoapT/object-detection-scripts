@@ -1,0 +1,25 @@
+{
+  "epochs": 8,
+  "learning_rate": 0.005,
+  "mode": "debug",
+  "ld_library_path": "../driver/lib",
+  "so_path": "../driver/bin/libnetdev.so",
+  "video_sources": ["rtsp://admin:admin123@192.168.1.108/cam/realmonitor?channel=1&subtype=1",
+                    "rtsp://admin:admin123@192.168.1.108/cam/realmonitor?channel=2&subtype=1",
+                    "rtsp://admin:admin123@192.168.1.108/cam/realmonitor?channel=3&subtype=1"],
+  "camera_ip": "192.168.1.108",
+  "class_names": ["unknown", "bird","person", "unknown"],
+  "tracking_class": ["bird"],
+  "searching_zoom": 11,
+  "pid_p": 1.0,
+  "pid_i": 0.5,
+  "camera_port": 37777,
+  "show": "yes",
+  "model": {
+              "directory": "../input/20190720175856_bird_person",
+              "input_image_rows": 608,
+              "input_image_cols": 608
+           },
+  "score_thresh": 0.3
+}
+

@@ -1,0 +1,26 @@
+
+// 请求返回的结果数据
+{
+    "object": [
+                {
+                    "class_name": "bird",
+                    "state": "moving",
+                    "time_stamp": 13314133.341437689,
+                    "channel": 1, // [0, 1, 2]
+                    "bbox": [100, 100, 200, 300], // [xmin, ymin, xmax, ymax]
+                    "center": [150, 200],
+                    "score": 0.9555
+                },
+
+                {
+                    "class_name": "person",
+                    "state": "static",
+                    "channel": 1, // [0, 1, 2]
+                    "bbox": [400, 200, 600, 800], // [xmin, ymin, xmax, ymax]
+                    "center": [500, 500],
+                    "score": 0.8888
+                }
+            ],
+    "state":"running", // running、stop
+    "time_stamp": 13314133.341437689
+}
