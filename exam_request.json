@@ -1,0 +1,9 @@
+
+// 请求服务json格式，参数定义如下：
+{
+    "control": "start", // 可以是"stop", "start"
+    "request": ["image",
+                "object",
+                "state"],  // 查询视觉探鸟状态，返回"running"、"stop"
+    "image_path": "/path/to/image.jpg"
+}
